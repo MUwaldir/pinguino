@@ -1,0 +1,167 @@
+.pinguino{
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+    &__inferior{
+        top: 40%;
+        left: 23.5%;
+        background-color: black;
+        width: 53%;
+        height: 45%;
+        border-radius: 70% 70% 100% 100%;
+        &--mano-derecha{
+            top: 0%;
+            left: -5%;
+            background-color: black;
+            width: 30%;
+            height: 60%;
+            border-radius: 30% 30% 120% 30%;
+            transform: rotate(45deg);
+            z-index: -1;
+        }
+        &--mano-izquierda{
+            top: 0%;
+            left: 75%;
+            background:black;
+            width: 30%;
+            height: 60%;
+            border-radius: 30% 30% 30% 120%;
+            transform: rotate(-45deg);
+            z-index: -1;
+        }
+        &--pie-izquierdo{
+            top: 85%;
+            left: 25%;
+            background: $pinguino-pico;
+            width: 15%;
+            height: 30%;
+            border-radius: 50% 50% 50% 50%;
+            transform: rotate(80deg);
+            z-index: -2222;
+        }
+        &--pie-derecho{
+            top: 85%;
+            left: 60%;
+            background: $pinguino-pico;
+            width: 15%;
+            height: 30%;
+            border-radius: 50% 50% 50% 50%;
+            transform: rotate(-80deg);
+            z-index: -2222;
+
+        }
+
+    }
+    &__superior{
+        top: 10%;
+        left: 25%;
+        background-color: black;
+        width: 50%;
+        height: 45%;
+        border-radius: 70% 70% 60% 60%;
+        &--mejilla-derecha{
+            top: 15%;
+            left: 35%;
+            background:$pinguino-barriga;
+            width: 60%;
+            height: 70%;
+            border-radius: 70% 70% 60% 60%;
+        }
+        &--mejilla-izquierda{
+            top: 15%;
+            left: 5%;
+            background: $pinguino-barriga;
+            width: 60%;
+            height: 70%;
+            border-radius: 70% 70% 60% 60%;
+        }
+        &--barriga{
+            top: 60%;
+            left: 2.5%;
+            background: $pinguino-barriga;
+            width: 95%;
+            height: 100%;
+            border-radius: 120% 120% 100% 100%;
+
+        }
+        &__ojo-derecho{
+            top: 45%;
+            left: 60%;
+            background: black;
+            width: 15%;
+            height: 17%;
+            border-radius: 50%;
+            &--reflejo-ojos{
+                top: 25%;
+                left: 15%;
+                background: white;
+                width: 35%;
+                height: 35%;
+                border-radius: 50%;
+            }
+        }
+        &__ojo-izquierdo{
+            top: 45%;
+            left: 25%;
+            background: black;
+            width: 15%;
+            height: 17%;
+            border-radius: 50%;
+            &--reflejo-ojos{
+                top: 25%;
+                left: 15%;
+                background: white;
+                width: 35%;
+                height: 35%;
+                border-radius: 50%;
+
+            }
+        }
+        &--color-mejilla-derecha{
+            top: 65%;
+            left: 15%;
+            background: pink;
+            width: 15%;
+            height: 10%;
+            border-radius: 50%;
+
+        }
+        &--color-mejilla-izquierda{
+            top: 65%;
+            left: 70%;
+            background: pink;
+            width: 15%;
+            height: 10%;
+            border-radius: 50%;
+        }
+        &--pico-superior{
+            top: 60%;
+            left: 40%;
+            background: $pinguino-pico;
+            width: 20%;
+            height: 10%;
+            border-radius: 50%;
+        }
+        &--pico-inferior{
+            top: 65%;
+            left: 42%;
+            background: $pinguino-pico;
+            width: 16%;
+            height: 10%;
+            border-radius: 50%;
+            
+        }
+
+    }
+}
+
+body{
+    background-color: #c6faf1;
+}
+
+.pinguino *{
+    position: absolute;
+}
